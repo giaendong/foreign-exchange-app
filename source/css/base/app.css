@@ -1,0 +1,12 @@
+html {
+  font-size: 12px;
+}
+
+body {
+  color: var(--black);
+  font-family: var(--font-family-sans-serif);
+}
+
+.card {
+  min-width: 50vw;
+}

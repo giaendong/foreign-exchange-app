@@ -1,0 +1,56 @@
+  /* DOT LOADER */
+  .dot-container {
+    width: 128px;
+    height: 28px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.dot-container .dot {
+    content: "";
+    position: relative;
+    margin-right: 12px;
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #e6e9f0;
+    animation: encoding 1s infinite;
+    -webkit-animation: encoding 1s infinite;
+    animation-delay: .10s;
+}
+
+.dot-container .dot:nth-child(2) {
+    animation-delay: .23s;
+}
+
+.dot-container .dot:nth-child(3) {
+    animation-delay: .46s;
+}
+
+.dot-container .dot:nth-child(4) {
+    animation-delay: .69s;
+}
+
+.dot-container .dot:nth-child(5) {
+    animation-delay: .92s;
+}
+
+@keyframes encoding {
+    0% {
+        opacity: 0.2;
+    }
+    25% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    100% {
+        background: gray;
+        opacity: 1;
+    }
+}
